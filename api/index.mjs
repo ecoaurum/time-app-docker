@@ -12,7 +12,7 @@ const PORT = 5000
 const app = express()
 app.use(bodyParser.json())
 const corsOptions = {
-  origin: 'https://time-app-docker-frontend.vercel.app',
+  origin: 'https://time-app-docker-frontend.onrender.com/',
   optionsSuccessStatus: 200,
 }
 app.use(cors(corsOptions))

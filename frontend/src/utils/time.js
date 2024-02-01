@@ -8,7 +8,7 @@ function startInterval() {
 
 async function saveTime() {
   const time = this.currentTime
-  const res = await fetch('https://time-app-docker-backend.vercel.app/times', {
+  const res = await fetch('https://time-app-docker-backend.onrender.com/times', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ async function saveTime() {
 }
 
 async function deleteTime(id) {
-  const res = await fetch(`https://time-app-docker-backend.vercel.app/${id}`, {
+  const res = await fetch(`https://time-app-docker-backend.onrender.com/${id}`, {
     method: 'DELETE',
   })
   const json = await res.json()
